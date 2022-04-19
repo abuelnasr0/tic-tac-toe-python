@@ -1,5 +1,5 @@
 # tic-tac-toe-python
-tic-tac-toe game which you will play with AI that think using minimax algorithm .
+tic-tac-toe game which you will play with AI that thinks using minimax algorithm .
 
 # Requirements
 gamepy 
