@@ -16,6 +16,7 @@ def initial_state():
             [EMPTY, EMPTY, EMPTY],
             [EMPTY, EMPTY, EMPTY]]
 
+
 def player(board):
     """
     Returns player who has the next turn on a board.
@@ -70,7 +71,7 @@ def winner(board):
             return O
         elif player(board) == O :
             return X
-    return False
+    return None
 
 def terminal(board):
     """
@@ -146,7 +147,7 @@ def minvalue(board,V,depth):
         return utility(board)
 
     # depth limited minimax
-    if depth >=5:
+    if depth >=6:
         # to make a depth limit you must make evaluation function that estimate the expected utility
         return evaluation(board)
 
@@ -176,7 +177,7 @@ def maxvalue(board,V,depth):
         return utility(board)
 
     # depth limited minimax
-    if depth >=5:
+    if depth >=6:
         # to make a depth limit you must make evaluation function that estimate the expected utility
         return evaluation(board)
 
